@@ -220,4 +220,3 @@ if __name__ == "__main__":
         f.write("c1#" + str(block[0]) + "#" + str(block[1]) + "#" + str(block[2]) + "\n")
     f.flush()
     f.close()
-

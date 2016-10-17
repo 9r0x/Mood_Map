@@ -1,0 +1,71 @@
+{
+	"ImportPath": "github.com/gaocegege/hackys-backend-writer",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v74",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.10.0-28-ga283a10",
+			"Rev": "a283a10442df8dc09befd873fab202bf8a253d6a"
+		},
+		{
+			"ImportPath": "github.com/ahmdrz/microsoft-cognitive-services/emotion",
+			"Rev": "52824e0cbc184f8df2dcf29b9c62c95bbbed304c"
+		},
+		{
+			"ImportPath": "github.com/emicklei/go-restful",
+			"Comment": "v1.2-3-gd74948d",
+			"Rev": "d74948d530a30ad5315b769d709626e94853a7d5"
+		},
+		{
+			"ImportPath": "github.com/emicklei/go-restful/log",
+			"Comment": "v1.2-3-gd74948d",
+			"Rev": "d74948d530a30ad5315b769d709626e94853a7d5"
+		},
+		{
+			"ImportPath": "github.com/jinzhu/inflection",
+			"Rev": "74387dc39a75e970e7a3ae6a3386b5bd2e5c5cff"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "b776ec39b3e54652e09028aaaaac9757f4f8211a"
+		},
+		{
+			"ImportPath": "gopkg.in/bsm/ratelimit.v1",
+			"Rev": "db14e161995a5177acef654cb0dd785e8ee8bc22"
+		},
+		{
+			"ImportPath": "gopkg.in/pg.v4",
+			"Comment": "v4.9.5",
+			"Rev": "9077b731c777301785dffa29a2d0e23119064a9f"
+		},
+		{
+			"ImportPath": "gopkg.in/pg.v4/internal",
+			"Comment": "v4.9.5",
+			"Rev": "9077b731c777301785dffa29a2d0e23119064a9f"
+		},
+		{
+			"ImportPath": "gopkg.in/pg.v4/internal/parser",
+			"Comment": "v4.9.5",
+			"Rev": "9077b731c777301785dffa29a2d0e23119064a9f"
+		},
+		{
+			"ImportPath": "gopkg.in/pg.v4/internal/pool",
+			"Comment": "v4.9.5",
+			"Rev": "9077b731c777301785dffa29a2d0e23119064a9f"
+		},
+		{
+			"ImportPath": "gopkg.in/pg.v4/orm",
+			"Comment": "v4.9.5",
+			"Rev": "9077b731c777301785dffa29a2d0e23119064a9f"
+		},
+		{
+			"ImportPath": "gopkg.in/pg.v4/types",
+			"Comment": "v4.9.5",
+			"Rev": "9077b731c777301785dffa29a2d0e23119064a9f"
+		}
+	]
+}

@@ -15,7 +15,7 @@ class PointDB():
 	def selectPoints(self, xmin, xmax, ymin, ymax, cur_ts, delta_ts):
 		prev_ts = cur_ts - delta_ts
 		query = "SELECT x,y,tag_id,time_stamp FROM point WHERE x >= {} AND x < {} AND y >= {} AND y < {} AND time_stamp >= {} AND time_stamp < {}".format(xmin, xmax, ymin, ymax, prev_ts, cur_ts)
-		
+
 		cur = self.conn.cursor()
 		try:
 			cur.execute(query)
@@ -36,5 +36,3 @@ class PointDB():
 		return rows
 	def close(self):
 		self.conn.close()
-
-

@@ -4,7 +4,7 @@ from datetime import datetime
 import random
 import json
 import csv
-	
+
 
 #shanghai
 # SJTU xuhui: 121.442393, 31.205193
@@ -33,13 +33,13 @@ def shpoints(count, center_count):
 	center = np.array([ 121.413446, 31.178717])
 	size = np.array([ 0.065898,  0.046494])
 
-	minp = center - size / 2 
-	maxp = center + size / 2 
+	minp = center - size / 2
+	maxp = center + size / 2
 	centers = np.array([nr.uniform(minp[0],maxp[0],center_count),nr.uniform(minp[1],maxp[1],center_count)]).T
 	#fixme: I don't know how long is 0.1 deg
 	points = [gaussian(count / center_count, center, [0.005,0.005]) for center in centers]
 	return points
-	# return np.reshape(points, (count, 2)) 
+	# return np.reshape(points, (count, 2))
 def shdata_notext(count, center_count):
 	now = 1476539612
 	yesterday = 1476439612
@@ -56,7 +56,7 @@ def shdata(count, center_count):
 
 	with open('week1.csv') as csvfile:
 		reader = csv.DictReader(csvfile)
-		
+
 		for i in range(count):
 			row = reader.next()
 			# 2012-01-03 01:12:55
@@ -85,7 +85,7 @@ def main():
 	# 	f.write(x)
 	# f.close()
 	f = csv.reader(open('out.data'), delimiter=' ')
-	
+
 	m = min([int(r[3]) for r in f])
 	print(m)
 
@@ -95,5 +95,5 @@ def main():
 	# ps = np.reshape(data,(5000,2))
 	# plt.scatter(ps[:,0],ps[:,1])
 	# plt.show()
-	
+
 main()
